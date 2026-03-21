@@ -16,17 +16,14 @@ int main()
     cout << "\t3. Calculate the Area of Triangle\n";
     cout << "\t4. Quit\n\n";
 
-    // Input validation for the menu choice
-    do
-    {
-        cout << "Enter your choice (1-4): ";
-        cin >> choice;
+    cout << "Enter your choice (1-4): ";
+    cin >> choice;
 
-        if (choice < 1 || choice > 4)
-        {
-            cout << "Wrong number\n";
-        }
-    } while (choice < 1 || choice > 4);
+    if (choice < 1 || choice > 4)
+    {
+        cout << "Wrong number\n";
+        return 0;
+    }
 
 
     switch(choice) {
