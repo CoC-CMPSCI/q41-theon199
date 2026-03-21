@@ -1,8 +1,6 @@
 # Compiled
 a.out
-a.exe
 *.o
-*.exe
 main
 programtest
 
