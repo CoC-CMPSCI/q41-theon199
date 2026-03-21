@@ -30,7 +30,12 @@ int main()
             cin >> height;
             area = width * height;
         case 3:
-
+            cout << "Enter the base: ";
+            cin >> base;
+            cout << "Enter the height: ";
+            cin >> height;
+            area = 0.5 * base * height;
+        case 4:
             }
 
     cout << left << setprecision(2) << fixed;
