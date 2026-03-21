@@ -36,6 +36,8 @@ int main()
             cin >> height;
             area = 0.5 * base * height;
         case 4:
+            cout << "Program Stopped"
+            exit(0);
             }
 
     cout << left << setprecision(2) << fixed;
