@@ -23,6 +23,14 @@ int main()
             cout << "Enter the radius: ";
             cin >> radius;
             area = PI * pow(radius, 2);
+        case 2:
+            cout << "Enter the width: ";
+            cin >> width;
+            cout << "Enter the height: ";
+            cin >> height;
+            area = width * height;
+        case 3:
+
             }
 
     cout << left << setprecision(2) << fixed;
