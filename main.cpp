@@ -8,17 +8,15 @@ int main()
     const double PI = 3.14159265358979;
     int choice;
     double width, height, radius, base;
-    double area;
+    double area = 0;
 
     cout << "Geometry Calculator\n";
     cout << "\t1. Calculate the Area of Circle\n";
     cout << "\t2. Calculate the Area of Rectangle\n";
     cout << "\t3. Calculate the Area of Triangle\n";
     cout << "\t4. Quit\n\n";
-    cout << "Enter your choice (1-4): ";
-    cin >> choice;
 
-    //This part should implement the input validation
+    // Input validation for the menu choice
     do
     {
         cout << "Enter your choice (1-4): ";
@@ -36,18 +34,21 @@ int main()
             cout << "Enter the radius: ";
             cin >> radius;
             area = PI * pow(radius, 2);
+            break;
         case 2:
             cout << "Enter the width: ";
             cin >> width;
             cout << "Enter the height: ";
             cin >> height;
             area = width * height;
+            break;
         case 3:
             cout << "Enter the base: ";
             cin >> base;
             cout << "Enter the height: ";
             cin >> height;
             area = 0.5 * base * height;
+            break;
         case 4:
             cout << "Program Stopped";
             return 0;
