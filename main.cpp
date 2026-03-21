@@ -18,7 +18,12 @@ int main()
     cout << "Enter your choice (1-4): ";
     cin >> choice;
 
-    // TODO
+    switch(choice) {
+        case 1:
+            cout << "Enter the radius: ";
+            cin >> radius;
+            area = PI * pow(radius, 2);
+            }
 
     cout << left << setprecision(2) << fixed;
     cout << "The area is " << area << endl;
