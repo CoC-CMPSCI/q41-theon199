@@ -18,6 +18,19 @@ int main()
     cout << "Enter your choice (1-4): ";
     cin >> choice;
 
+    //This part should implement the input validation
+    do
+    {
+        cout << "Enter your choice (1-4): ";
+        cin >> choice;
+
+        if (choice < 1 || choice > 4)
+        {
+            cout << "Wrong number\n";
+        }
+    } while (choice < 1 || choice > 4);
+
+
     switch(choice) {
         case 1:
             cout << "Enter the radius: ";
@@ -36,7 +49,7 @@ int main()
             cin >> height;
             area = 0.5 * base * height;
         case 4:
-            cout << "Program Stopped"
+            cout << "Program Stopped";
             return 0;
             }
 
